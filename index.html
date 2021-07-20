@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Photo view</title>
+</head>
+<body>
+<h3><b>Simple photo viewer</b></h3>
+<div class="display" style="border-bottom:4px solid goldenrod;padding-bottom: 1rem;">
+    <div id="imagePlaceholder" class="d-block" style="width:1280px;height:500px;background-color: #eaeaea;">
+        <h1 class="d-none d-sm-block display-6 text-center" style="padding-top:12rem;color:rgb(179, 179, 179)">Select one of the images below</h1>
+        <h1 class="d-block d-sm-none display-6 text-center" style="padding-left: 4rem;padding-top:12rem">Click on the pictures below to view the photo</h1>
+    </div>
+    <div id="displayImage">
+        <div class="row">
+            <div class="col-12">
+                <img id="imageLink" src="" style="width:100%">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="imagecollection" style="padding-top:1rem">
+    <div class="container">
+        <div class="row d-none d-sm-flex">
+            <div class="col">
+                <img id="image" src="https://images.unsplash.com/photo-1589642428333-96ce74c6f0d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1079&q=80" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col">
+                <img id="image" src="https://images.unsplash.com/photo-1576068070379-819c2bcd2c3a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col"><img id="image" src="https://images.unsplash.com/photo-1574047932575-7b354a4e0682?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail" alt="..."></div>
+            <div class="col"><img id="image" src="https://images.unsplash.com/photo-1458093257227-0f30303eb1f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail" alt="..."></div>
+            <div class="col"><img id="image" src="https://images.unsplash.com/photo-1615752592676-f6bd84f9419d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail" alt="..."></div>
+            <div class="col"><img id="image" src="https://images.unsplash.com/photo-1601922369043-c1e6808d9102?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail" alt="..."></div>
+        </div>
+        <div class="row d-sm-none">
+            <div id="carouselExampleControls" class="carousel slide d-sm-none" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="col-12 d-sm-none">
+                        <img id="image" src="https://images.unsplash.com/photo-1576068070379-819c2bcd2c3a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80" class="img-thumbnail" alt="...">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-12 d-sm-none"><img id="image" src="https://images.unsplash.com/photo-1589642428333-96ce74c6f0d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1079&q=80" class="img-thumbnail" alt="..."></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-12 d-sm-none"><img id="image" src="https://images.unsplash.com/photo-1574047932575-7b354a4e0682?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail" alt="..."></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-12 d-sm-none"><img id="image" src="https://images.unsplash.com/photo-1458093257227-0f30303eb1f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail" alt="..."></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-12 d-sm-none"><img id="image" src="https://images.unsplash.com/photo-1615752592676-f6bd84f9419d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail" alt="..."></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-12 d-sm-none"><img id="image" src="https://images.unsplash.com/photo-1601922369043-c1e6808d9102?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-thumbnail" alt="..."></div>
+                  </div>
+    
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
